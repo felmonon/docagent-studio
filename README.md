@@ -4,6 +4,10 @@
 
 DocAgent Studio ingests PDFs, Markdown notes, and Notion exports into a local SQLite database, retrieves context with hybrid lexical plus vector search, and answers questions with traceable citations.
 
+![DocAgent Studio web UI answering a question over the bundled example data, with a file-and-line citation on every claim](docs/images/web-ui.png)
+
+<sub>The web UI running locally on the bundled `example_data` with `llama3.2:1b` through Ollama. Each answer line cites its source file and line.</sub>
+
 ## What Is Live Today
 
 - CLI ingest for PDFs, Markdown, and exported Notion content
