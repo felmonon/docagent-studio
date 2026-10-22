@@ -41,9 +41,9 @@ def create_app(*, default_db_path: str | None = None):
     @app.get("/", response_class=HTMLResponse)
     def home(request: Request):
         return templates.TemplateResponse(
+            request,
             "index.html",
             {
-                "request": request,
                 "db_path": db_default,
                 "embed_model": settings.embed_model,
                 "ollama_base_url": settings.ollama_base_url,
